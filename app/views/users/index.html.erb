@@ -1,0 +1,7 @@
+<h1>indexView</h1>
+<% @users.each do |user| %>
+<h1><%= user.firstname %></h1>
+<h3><%= link_to user.firstname, user_path(user) %></h3>
+<% end %>
+
+<%= link_to 'New', new_user_path %>

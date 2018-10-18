@@ -1,0 +1,7 @@
+<h2> <%= @user.firstname %></h2>
+<h2> <%= @user.lastname %></h2>
+<h2> <%= @user.desc %></h2>
+<h2> <%= @user.age %></h2>
+<%= link_to 'Back', root_path %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Delete', user_path(@user), method: :delete %>

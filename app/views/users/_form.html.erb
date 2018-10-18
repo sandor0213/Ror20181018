@@ -1,0 +1,9 @@
+<%= form_for @user do |f| %>
+<%= f.label :firstname %> <br>
+<%= f.text_field :firstname %> <br>
+<%= f.label 'LastnameEnter' %> <br>
+<%= f.text_field :age %> <br>
+<%= f.label :desc %> <br>
+<%= f.password_field :desc %> <br>
+<%= f.submit 'Registration'%>
+<% end %>
